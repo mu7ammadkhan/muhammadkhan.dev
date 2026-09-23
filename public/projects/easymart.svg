@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#151444"/><stop offset="1" stop-color="#06263b"/></linearGradient><linearGradient id="p" x1="0" x2="1"><stop stop-color="#121a2d"/><stop offset="1" stop-color="#0a1020"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#g)"/><circle cx="990" cy="60" r="260" fill="#52d8df" opacity=".08"/><circle cx="160" cy="650" r="260" fill="#7650df" opacity=".10"/>
+<rect x="105" y="88" width="990" height="500" rx="32" fill="url(#p)" stroke="#ffffff" stroke-opacity=".14"/>
+<rect x="105" y="88" width="990" height="58" rx="32" fill="#151f35"/><circle cx="148" cy="117" r="8" fill="#ff6b6b"/><circle cx="176" cy="117" r="8" fill="#ffcc66"/><circle cx="204" cy="117" r="8" fill="#52d8df"/>
+<rect x="140" y="181" width="190" height="365" rx="18" fill="#0f182a"/><rect x="365" y="181" width="690" height="95" rx="18" fill="#141f34"/><rect x="365" y="305" width="330" height="241" rx="18" fill="#111a2c"/><rect x="725" y="305" width="330" height="241" rx="18" fill="#111a2c"/>
+<rect x="392" y="211" width="160" height="18" rx="9" fill="#52d8df" opacity=".65"/><rect x="392" y="241" width="310" height="10" rx="5" fill="#9babca" opacity=".24"/>
+<rect x="170" y="220" width="125" height="13" rx="6" fill="#f1f5ff" opacity=".42"/><rect x="170" y="264" width="110" height="11" rx="5" fill="#7f91b2" opacity=".26"/><rect x="170" y="300" width="125" height="11" rx="5" fill="#7f91b2" opacity=".26"/><rect x="170" y="336" width="96" height="11" rx="5" fill="#7f91b2" opacity=".26"/>
+<path d="M401 488c46-78 96 28 147-45 43-62 83-6 115-63" fill="none" stroke="#52d8df" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+<rect x="760" y="353" width="250" height="24" rx="12" fill="#7650df" opacity=".40"/><rect x="760" y="398" width="190" height="14" rx="7" fill="#9babca" opacity=".25"/><rect x="760" y="433" width="225" height="14" rx="7" fill="#9babca" opacity=".18"/>
+<text x="105" y="635" fill="#eef7ff" font-size="34" font-family="Arial,sans-serif" font-weight="700">EasyMart Plus</text><text x="1095" y="635" text-anchor="end" fill="#b2c0d6" font-size="20" font-family="Arial,sans-serif">Retail POS</text>
+</svg>
