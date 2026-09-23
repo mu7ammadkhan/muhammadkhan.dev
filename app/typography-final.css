@@ -2,12 +2,14 @@
 .hero h1,
 .hero-main .hero h1,
 .typewriter-heading h1 {
-  height: 3.35em;
-  min-height: 3.35em;
-  max-height: 3.35em;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  margin-bottom: 12px;
   font-size: clamp(38px, 5.2vw, 70px);
   line-height: 1.08;
 }
+.typewriter-heading { min-height: 2.16em; }
 .showcase-copy h2 {
   font-size: 24px;
   font-weight: 750;
@@ -20,20 +22,11 @@
 }
 
 @media (max-width: 820px) {
-  .typewriter-heading h1 {
-    height: 3.35em;
-    min-height: 3.35em;
-    max-height: 3.35em;
-    font-size: clamp(36px, 11vw, 54px);
-    line-height: 1.08;
-  }
+  .typewriter-heading { min-height: 3.24em; }
+  .typewriter-heading h1 { font-size: clamp(36px, 11vw, 54px); line-height: 1.08; }
 }
 
 @media (max-width: 560px) {
-  .typewriter-heading h1 {
-    height: 3.45em;
-    min-height: 3.45em;
-    max-height: 3.45em;
-    font-size: clamp(34px, 10.5vw, 46px);
-  }
+  .typewriter-heading { min-height: 3.24em; }
+  .typewriter-heading h1 { font-size: clamp(34px, 10.5vw, 46px); }
 }

@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 
 const headline = "I build systems that run real businesses.";
+const accentText = "businesses.";
+const accentStart = headline.indexOf(accentText);
 const typeDelay = 62;
 const deleteDelay = 34;
 const holdDelay = 5000;
@@ -31,10 +33,14 @@ export function TypewriterHeadline() {
     return () => window.clearTimeout(timer);
   }, [deleting, text]);
 
+  const regularText = text.slice(0, accentStart);
+  const highlightedText = text.slice(accentStart);
+
   return (
     <div className="typewriter-heading">
       <h1 id="hero-title" aria-label={headline}>
-        {text}
+        {regularText}
+        <em>{highlightedText}</em>
         <i className="typewriter-cursor" aria-hidden="true" />
       </h1>
     </div>
