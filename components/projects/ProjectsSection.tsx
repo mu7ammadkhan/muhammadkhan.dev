@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState, type ReactNode } from "react";
 import type { Project } from "@/types/portfolio";
 import { SectionHead } from "@/components/SectionHead";
@@ -38,18 +39,17 @@ function DetailGroup({ label, children }: { label: string; children: ReactNode }
   );
 }
 
-export function ProjectsSection({ projects }: { projects: Project[] }) {
+export function ProjectsSection({ projects, archive = false }: { projects: Project[]; archive?: boolean }) {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
-  const [showMore, setShowMore] = useState(false);
   const featured = projects.filter((project) => project.featured).slice(0, 4);
-  const more = projects.filter((project) => !featured.some((item) => item.id === project.id));
+  const visibleProjects = archive ? projects : featured;
 
   useEffect(() => {
-    if (!activeProject && !showMore) return;
+    if (!activeProject) return;
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setActiveProject(null);
-        setShowMore(false);
+
       }
     };
     document.addEventListener("keydown", onKey);
@@ -58,35 +58,21 @@ export function ProjectsSection({ projects }: { projects: Project[] }) {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
-  }, [activeProject, showMore]);
+  }, [activeProject]);
 
   return (
     <section id="projects" className="content-section">
-      <SectionHead title="Selected work" count="02 / 08" />
+      <SectionHead title={archive ? "All projects" : "Selected projects"} count={archive ? "Project archive" : "Featured work"} />
       <div className="section-intro-row">
-        <p>Real products first. These case studies show the business problem, what I built, my role and the technologies behind the solution.</p>
+        <p>{archive ? "A growing archive of commercial products, client work, automation systems and experiments." : "Selected case studies showing the business problem, what I built, my role and the technologies behind the solution."}</p>
         <span>proof over feature-dumping</span>
       </div>
       <div className="project-grid">
-        {featured.map((project) => <ProjectCard key={project.id} project={project} onOpen={setActiveProject} />)}
+        {visibleProjects.map((project) => <ProjectCard key={project.id} project={project} onOpen={setActiveProject} />)}
       </div>
 
-      {more.length > 0 && (
-        <div className="show-more-wrap">
-          <button className="show-more-btn" onClick={() => setShowMore(true)}>Explore all projects</button>
-        </div>
-      )}
-
-      {showMore && (
-        <div className="modal-shell" role="dialog" aria-modal="true" aria-label="More projects">
-          <button className="modal-backdrop" onClick={() => setShowMore(false)} aria-label="Close more projects" />
-          <div className="more-modal">
-            <div className="modal-top"><div><small>portfolio archive</small><h3>More projects</h3></div><button onClick={() => setShowMore(false)}>✕</button></div>
-            <div className="project-grid modal-project-grid">
-              {more.map((project) => <ProjectCard key={project.id} project={project} onOpen={(item) => { setShowMore(false); setActiveProject(item); }} />)}
-            </div>
-          </div>
-        </div>
+      {!archive && (
+        <div className="show-more-wrap"><Link className="show-more-btn" href="/projects">Explore all projects</Link></div>
       )}
 
       {activeProject && (
@@ -95,7 +81,7 @@ export function ProjectsSection({ projects }: { projects: Project[] }) {
           <article className="project-modal case-study-modal">
             <button className="modal-close" onClick={() => setActiveProject(null)} aria-label="Close">✕</button>
             <div className="modal-image">
-              <Image src={activeProject.image} alt={`${activeProject.title} preview`} fill sizes="92vw" priority />
+              {activeProject.video ? <video src={activeProject.video} poster={activeProject.image} controls playsInline preload="metadata" /> : <Image src={activeProject.image} alt={`${activeProject.title} preview`} fill sizes="92vw" priority />}
               <div className="case-hero-copy">
                 <span>{activeProject.category}</span>
                 <h3>{activeProject.title}</h3>

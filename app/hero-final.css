@@ -67,7 +67,7 @@
 .proof-stat span { font-size: 8px; line-height: 1.35; letter-spacing: .06em; }
 
 @media (max-width: 820px) {
-  .hero h1, .hero-main .hero h1 { height: 3.08em; min-height: 3.08em; max-height: 3.08em; }
+  .hero h1, .hero-main .hero h1 { min-height: 3.3em; height: auto; max-height: none; }
   .proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
   .proof-stat, .proof-stat:nth-child(2), .proof-stat:nth-child(-n+2) { min-height: 62px; padding: 10px 14px; border: 0; border-bottom: 1px solid var(--line); }
   .proof-stat:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--line); }
@@ -75,6 +75,6 @@
 }
 
 @media (max-width: 560px) {
-  .hero h1, .hero-main .hero h1 { height: 3.12em; min-height: 3.12em; max-height: 3.12em; }
+  .hero h1, .hero-main .hero h1 { min-height: 3.35em; height: auto; max-height: none; }
   .proof-stat { flex-direction: column; }
 }

@@ -12,6 +12,7 @@ export type Project = {
   technologies: string[];
   features: string[];
   image: string;
+  video?: string;
   featured?: boolean;
   commercial?: boolean;
 };

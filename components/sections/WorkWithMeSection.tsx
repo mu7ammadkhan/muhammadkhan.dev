@@ -19,7 +19,7 @@ export function WorkWithMeSection() {
         <article className="conversion-card project-card-conversion" id="project-inquiry">
           <div className="conversion-kicker">For businesses investing in better systems</div>
           <h2>Turn an operational workflow into dependable software.</h2>
-          <p>MK TECH builds practical systems around the way businesses operate. These systems can cover billing, inventory, customer records, reporting, desktop workflows and connected automation.</p>
+          <p>I build practical systems around the way businesses operate. These can include websites, web applications, billing, inventory, customer records, reporting, desktop workflows and connected automation.</p>
           <div className="project-qualifiers"><span>Website / Web App</span><span>Desktop Software</span><span>POS System</span><span>Business Management</span><span>IoT / Automation</span></div>
           <div className="conversion-actions"><a className="primary-btn" href={projectMail}>Discuss your system <span>→</span></a><a className="secondary-btn" href={site.whatsapp} target="_blank" rel="noreferrer">Business WhatsApp <span>↗</span></a></div>
         </article>

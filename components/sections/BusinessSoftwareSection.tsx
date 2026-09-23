@@ -7,15 +7,15 @@ export function BusinessSoftwareSection() {
     <section className="content-section business-software" id="business-software">
       <SectionHead title="Software for every business" count="Capabilities" />
       <div className="section-intro-row">
-        <p>The named POS products are proven examples. They do not define the limit of what I can build. MK TECH can design a complete system around the workflow of virtually any shop, office, clinic, showroom or service business.</p>
+        <p>The named POS products are proven examples. They do not define the limit of what I can build. I can design a complete system around the workflow of virtually any shop, office, clinic, showroom or service business.</p>
         <span>your workflow → your software</span>
       </div>
       <CardSlider label="Business software categories">
-        {businessTypes.map((business, index) => (
+        {businessTypes.map(([business, description], index) => (
           <article className="business-type-card" key={business}>
             <span>{String(index + 1).padStart(2, "0")}</span>
             <h3>{business}</h3>
-            <p>Custom billing, records, stock, customers, payments and reporting around the way this business operates.</p>
+            <p>{description}</p>
           </article>
         ))}
       </CardSlider>

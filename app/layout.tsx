@@ -11,7 +11,7 @@ import "./typography-final.css";
 import { site } from "@/data/portfolio";
 
 export const metadata: Metadata = {
-  title: `${site.name} — Full-Stack Developer & Software Product Builder`,
+  title: `${site.name} · Full-Stack Developer & Software Product Builder`,
   description:
     "Muhammad Khan builds commercial POS systems, desktop business software, full-stack React/Next.js applications and ESP32/MQTT automation products through MK TECH.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   creator: site.name,
   robots: { index: true, follow: true },
   openGraph: {
-    title: `${site.name} — Full-Stack Developer & Software Product Builder`,
+    title: `${site.name} · Full-Stack Developer & Software Product Builder`,
     description: "Commercial software, web applications and IoT systems built for real-world use.",
     type: "website",
   },

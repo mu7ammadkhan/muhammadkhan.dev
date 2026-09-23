@@ -7,8 +7,8 @@ export const site = {
   company: "MK TECH",
   location: "Karachi, Pakistan. Products delivered globally",
   experience: "2+ years",
-  deployments: "8+ business deployments",
-  productCount: "6+ products & systems",
+  deployments: "Real business deployments",
+  productCount: "Products and systems built for real operations",
   availability: "commercial products and selective collaborations",
   email: "mu7ammadkhan67@gmail.com",
   phone: "+92 315 2206451",
@@ -20,12 +20,7 @@ export const site = {
   cv: "/resume/Muhammad-Khan-CV.pdf",
 };
 
-export const proofStats = [
-  ["2+", "Years building real software"],
-  ["8+", "Business deployments"],
-  ["6+", "Products & systems built"],
-  ["3", "Domains: Web · Desktop · IoT"],
-] as const;
+export const proofStats = [['Live', 'Production systems in active use'], ['Broad', 'Websites, web apps, POS and automation'], ['End to end', 'From product planning to deployment'], ['Flexible', 'Web, desktop and connected devices']] as const;
 
 export const stackRows = [
   ["Frontend", "Next.js · React · TypeScript · JavaScript · HTML5 · CSS3"],
@@ -35,7 +30,7 @@ export const stackRows = [
   ["Desktop", "Electron · Vite · POS Systems · Offline-first Business Apps"],
   ["Product", "Licensing · Updaters · Backup/Restore · Printing · Reports"],
   ["IoT", "ESP32 · MQTT · Realtime Device Control · Web Speech API"],
-  ["Delivery", "Git · GitHub · Vercel · Testing · Production Builds"],
+  ["Delivery", "Git · GitHub · Vercel · Netlify · GitHub Pages · Testing · Production Builds"],
 ] as const;
 
 export const projects: Project[] = [
@@ -110,13 +105,13 @@ export const projects: Project[] = [
   {
     id: "nova-control",
     title: "Nova Control",
-    year: "2024 — Present",
+    year: "2024 to Present",
     category: "Full-Stack IoT Automation",
     headline: "A web platform that connects modern software with real ESP32-powered devices.",
     summary: "My smart automation platform for controlling electrical appliances, organizing rooms and monitoring device states through a responsive web dashboard.",
     problem: "A useful automation system needs more than hardware switching: users need authentication, organized rooms/devices, realtime state, a scalable backend and a web interface that stays simple across phones and desktops.",
     solution: "The initial system used React and Firebase for authentication and realtime state management with ESP32 hardware. It is being evolved to a Next.js, TypeScript, MongoDB and MQTT architecture for scalable realtime control.",
-    outcome: "Nova Control received 1st Position at the FYP Exhibition and continues as an actively developed product direction for homes, offices and shops.",
+    outcome: "Nova Control was awarded at the FYP Exhibition and continues as an actively developed product direction for homes, offices and shops.",
     role: ["Full-Stack Developer", "IoT Developer", "Product Designer", "Hardware Integration"],
     technologies: ["Next.js", "React", "TypeScript", "JavaScript", "Node.js", "MongoDB", "Firebase", "Firebase Realtime Database", "MQTT", "ESP32", "Web Speech API"],
     features: ["Authentication", "Rooms & devices", "Realtime device state", "Appliance control", "ESP32 integration", "MQTT communication", "Responsive dashboard", "Voice commands"],
@@ -140,13 +135,13 @@ export const projects: Project[] = [
   {
     id: "full-stack-web",
     title: "Client Web Applications",
-    year: "2025 — Present",
+    year: "2025 to Present",
     category: "Freelance & Full-Stack Web Development",
     headline: "Responsive websites and web applications built around client requirements.",
     summary: "Freelance and direct-client work covering landing pages, restaurant websites, dashboards, responsive interfaces and custom web application development.",
     problem: "Clients need websites that look professional on every screen, load quickly and can evolve beyond a static template when business logic or data is required.",
     solution: "I build responsive interfaces with React/Next.js and TypeScript, connect APIs and data where needed, fix existing JavaScript issues and deploy maintainable web experiences.",
-    outcome: "Completed freelance website and landing-page work through Fiverr while continuing to take direct web and application projects.",
+    outcome: "Completed freelance website and landing-page work through Fiverr, LinkedIn and direct client relationships while continuing to take web and application projects.",
     role: ["Freelance Web Developer", "Frontend Developer", "Full-Stack Developer"],
     technologies: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS", "Firebase", "MongoDB", "Vercel"],
     features: ["Responsive UI", "Landing pages", "Business websites", "Dashboards", "Authentication", "API integration", "Bug fixing", "Deployment"],
@@ -211,7 +206,7 @@ export const services = [
       ["api", "Next.js APIs and application logic"],
       ["db", "MongoDB, Firebase and realtime data"],
       ["fix", "JavaScript debugging and existing-code improvements"],
-      ["ship", "GitHub and Vercel deployment workflows"],
+      ["ship", "GitHub, Vercel, Netlify and GitHub Pages deployment workflows"],
     ],
     pill: "web apps · dashboards · websites · internal tools",
   },
@@ -236,19 +231,19 @@ export const experience = [
   {
     period: "Current",
     title: "Founder & Software Developer · MK TECH",
-    description: "Designing, building and delivering commercial POS systems, desktop management software, custom web solutions and automation products. Responsible for product planning, UI, business logic, data workflows, deployment, licensing, updates and ongoing improvement. Software from this work is deployed with 8+ business customers.",
+    description: "Designing, building and delivering commercial POS systems, desktop management software, custom web solutions and automation products. Responsible for product planning, UI, business logic, data workflows, deployment, licensing, updates and ongoing improvement. These systems are built for real business use and continue to evolve through practical feedback.",
     tag: "product ownership",
     current: true,
   },
   {
-    period: "Mar 2024 — Present",
+    period: "Mar 2024 to Present",
     title: "Full-Stack Developer · Nova Control",
     description: "Building a smart automation platform that connects a responsive web dashboard with ESP32 devices. Started with React + Firebase realtime control and is evolving toward Next.js + TypeScript + MongoDB + MQTT.",
     tag: "web + IoT",
     current: true,
   },
   {
-    period: "Sep 2025 — Present",
+    period: "Sep 2025 to Present",
     title: "Freelance Web Developer · Fiverr & Direct Clients",
     description: "Delivering responsive websites, landing pages and frontend work using React, JavaScript, TypeScript and Tailwind CSS, including UI dashboards, bug fixes and cross-device optimization.",
     tag: "freelance",
@@ -271,17 +266,33 @@ export const whyMe = [
 ] as const;
 
 export const credentials = [
-  ["University of Sindh", "Bachelor's Degree in Computer Science · 2022 — 2025", "Education"],
-  ["1st Position — FYP Exhibition", "Nova Control Smart Home Automation System", "Award"],
+  ["University of Sindh", "Bachelor's Degree in Computer Science · 2022 to 2025", "Education"],
+  ["Awarded · FYP Exhibition", "Nova Control Smart Home Automation System", "Award"],
   ["Product Engineering", "Full-Stack · React / Next.js · Desktop Systems · Software Products", "Capability"],
   ["MK TECH", "Commercial products for retail, restaurants, tailoring and motorcycle dealership workflows", "Business"],
   ["Fiverr", "Responsive websites, landing pages, UI dashboards and JavaScript improvements", "Freelance"],
-  ["8+ Business Deployments", "Commercial systems currently used across real customer businesses", "Proof"],
+  ["Real Business Deployments", "Commercial systems currently used across customer operations", "Proof"],
 ] as const;
 
 export const businessTypes = [
-  "Tailor Shops", "Hotels", "Restaurants", "Fast Food", "Wholesalers", "Poultry Businesses",
-  "Supermarkets & Marts", "Vehicle Showrooms", "Book Stores", "Medical Stores", "Hospitals & Clinics",
-  "General Stores", "Salons", "Vegetable Shops", "Mobile Shops", "Laptop & Electronics Shops",
-  "Offices & Service Centers", "Warehouses & Godowns", "Real Estate", "Any Custom Business",
+  ["Tailor Shops", "Measurements, customer orders, delivery dates, worker assignments and payment balances in one workflow."],
+  ["Hotels", "Reservations, rooms, guest records, check-ins, services, billing and occupancy reporting."],
+  ["Restaurants", "Tables, orders, kitchen tickets, billing, shifts, expenses and daily sales control."],
+  ["Fast Food", "Quick counter orders, kitchen flow, deals, delivery tracking, payments and rapid billing."],
+  ["Wholesalers", "Bulk pricing, purchases, stock, customer ledgers, invoices and receivables."],
+  ["Poultry Businesses", "Flock or stock records, daily sales, feed and expense tracking, suppliers and profit visibility."],
+  ["Supermarkets & Marts", "Barcode billing, inventory, purchases, suppliers, customer credit, shifts and reports."],
+  ["Vehicle Showrooms", "Vehicle stock, purchase and sale history, customer records, documents and transaction tracking."],
+  ["Book Stores", "ISBN or barcode stock, categories, purchases, sales, suppliers and inventory alerts."],
+  ["Medical Stores", "Medicine batches, expiry tracking, stock, purchases, prescriptions, billing and supplier records."],
+  ["Hospitals & Clinics", "Appointments, patients, doctors, visits, prescriptions, billing and medical records."],
+  ["General Stores", "Fast billing, product stock, customer credit, purchasing, expenses and daily reports."],
+  ["Salons", "Appointments, services, staff commissions, customers, packages, inventory and payments."],
+  ["Vegetable Shops", "Weight-based billing, changing prices, purchases, wastage, supplier balances and daily sales."],
+  ["Mobile Shops", "Devices and accessories, IMEI records, repairs, warranties, inventory and customer payments."],
+  ["Laptop & Electronics Shops", "Serial-number inventory, quotations, repairs, warranties, sales and supplier tracking."],
+  ["Offices & Service Centers", "Clients, jobs, staff assignments, service status, documents, invoices and follow-ups."],
+  ["Warehouses & Godowns", "Stock movement, receiving, dispatch, locations, transfers and audit-ready records."],
+  ["Real Estate", "Properties, leads, clients, visits, deals, installments, commissions and follow-ups."],
+  ["Any Custom Business", "A purpose-built website, web app, automation or management system shaped around your actual workflow."],
 ] as const;

@@ -15,7 +15,7 @@ export function ContactSection() {
         <div className="panel contact-links">
           <a href={`mailto:${site.email}`}><span><small>email</small><b>{site.email}</b></span><i>→</i></a>
           {externalLinks.map(([label, href, text]) => <a href={href} target="_blank" rel="noreferrer" key={label}><span><small>{label}</small><b>{text}</b></span><i>→</i></a>)}
-          <a href={site.cv} download><span><small>credentials</small><b>Muhammad Khan — CV.pdf</b></span><i>↓</i></a>
+          <a href={site.cv} download><span><small>credentials</small><b>Muhammad Khan. CV.pdf</b></span><i>↓</i></a>
         </div>
       </div>
     </section>

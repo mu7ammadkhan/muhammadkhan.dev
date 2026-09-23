@@ -1,7 +1,7 @@
 /* Final headline scale and identity emphasis. */
 .hero h1,
 .hero-main .hero h1,
-.typewriter-heading .desktop-typewriter {
+.typewriter-heading h1 {
   height: 3.35em;
   min-height: 3.35em;
   max-height: 3.35em;
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 820px) {
-  .typewriter-heading .mobile-headline {
+  .typewriter-heading h1 {
     height: 3.35em;
     min-height: 3.35em;
     max-height: 3.35em;
@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 560px) {
-  .typewriter-heading .mobile-headline {
+  .typewriter-heading h1 {
     height: 3.45em;
     min-height: 3.45em;
     max-height: 3.45em;

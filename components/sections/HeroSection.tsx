@@ -12,9 +12,9 @@ export function HeroSection() {
       <div className="hero-main">
         <div className="hero-copy">
           <TypewriterHeadline />
-          <p className="hero-tag">I design and build commercial software around real operations. This includes ready-to-deploy POS products and custom systems for any business workflow.</p>
+          <p className="hero-tag">I design and build complete digital solutions around real operations, including business automation, responsive websites, web applications, POS products and custom management systems.</p>
           <div className="hero-actions"><a className="primary-btn" href="#projects">Explore products <span>→</span></a><a className="secondary-btn" href="#hire">Work together <span>↗</span></a><a className="text-btn" href="#project-inquiry">Discuss a business system <span>→</span></a></div>
-          <div className="chip-row hero-chips"><span className="chip live">{site.availability}</span><span className="chip">{site.experience} experience</span><span className="chip">{site.deployments}</span><span className="chip">Web · Desktop · IoT</span></div>
+          <div className="chip-row hero-chips"><span className="chip live">{site.availability}</span><span className="chip">Production experience</span><span className="chip">Real business deployments</span><span className="chip">Web · Desktop · IoT</span></div>
         </div>
         <aside className="hero-showcase" aria-label={`${site.name}, ${site.role}`}>
           <Image className="showcase-portrait" src="/profile.png" alt={`${site.name}, Full-Stack Developer`} width={1080} height={1350} priority />
