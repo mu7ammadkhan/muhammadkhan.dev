@@ -1,10 +1,8 @@
 import { PageBackground } from "@/components/layout/PageBackground";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { BusinessSoftwareSection } from "@/components/sections/BusinessSoftwareSection";
-import { ContactSection } from "@/components/sections/ContactSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
@@ -15,8 +13,7 @@ export default function HomePage() {
   return (
     <>
       <PageBackground />
-      <SiteHeader />
-      <main>
+<main>
         <HeroSection />
         <AboutSection />
         <ProjectsSection projects={projects} />
@@ -24,8 +21,7 @@ export default function HomePage() {
         <BusinessSoftwareSection />
         <ExperienceSection />
         <WorkWithMeSection />
-        <ContactSection />
-      </main>
+</main>
       <SiteFooter />
     </>
   );

@@ -54,6 +54,7 @@ export function TypewriterHeadline() {
         <em>{text.slice(accentStart)}</em>
         <i className="typewriter-cursor" aria-hidden="true" />
       </h1>
+      <h1 className="mobile-static-headline" aria-hidden="true">I build systems that run real <em>businesses.</em></h1>
     </div>
   );
 }

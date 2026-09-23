@@ -27,7 +27,7 @@ export function HeroSection() {
             </div>
             <div className="chip-row hero-chips">
               <span className="chip live">{site.availability}</span>
-              <span className="chip">Production experience</span>
+              <span className="chip">2+ years production experience</span>
               <span className="chip">Real business deployments</span>
               <span className="chip">Web · Desktop · IoT · Automation</span>
             </div>
