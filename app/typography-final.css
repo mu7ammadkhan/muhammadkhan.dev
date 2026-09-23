@@ -10,7 +10,7 @@
   font-size: clamp(38px, 5.2vw, 70px);
   line-height: 1.08;
 }
-.typewriter-heading { height: 2.16em; min-height: 2.16em; }
+.typewriter-heading { height: auto; min-height: 0; }
 .showcase-copy h2 {
   font-size: 24px;
   font-weight: 750;
@@ -23,11 +23,11 @@
 }
 
 @media (max-width: 820px) {
-  .typewriter-heading { height: 2.16em; min-height: 2.16em; }
+  .typewriter-heading { height: auto; min-height: 0; }
   .typewriter-heading h1 { font-size: clamp(30px, 9vw, 48px); line-height: 1.08; }
 }
 
 @media (max-width: 560px) {
-  .typewriter-heading { height: 2.16em; min-height: 2.16em; }
+  .typewriter-heading { height: auto; min-height: 0; }
   .typewriter-heading h1 { font-size: clamp(27px, 8.5vw, 38px); }
 }

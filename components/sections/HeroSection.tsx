@@ -1,4 +1,5 @@
 import Image from "next/image";
+import profileImage from "@/public/profile.png";
 import { TypewriterHeadline } from "@/components/ui/TypewriterHeadline";
 import { proofStats, site } from "@/data/portfolio";
 
@@ -6,7 +7,7 @@ export function HeroSection() {
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="profile-card">
-        <div className="avatar-wrap"><Image src="/profile.png" alt={site.name} width={68} height={85} priority /></div>
+        <div className="avatar-wrap"><Image src={profileImage} alt={site.name} priority /></div>
         <div className="profile-meta"><div className="profile-name">{site.name}</div><div className="profile-role">{site.role}</div><div className="profile-location">Karachi, Pakistan</div></div>
       </div>
       <div className="hero-main">
@@ -17,7 +18,7 @@ export function HeroSection() {
           <div className="chip-row hero-chips"><span className="chip live">{site.availability}</span><span className="chip">Production experience</span><span className="chip">Real business deployments</span><span className="chip">Web · Desktop · IoT</span></div>
         </div>
         <aside className="hero-showcase" aria-label={`${site.name}, ${site.role}`}>
-          <Image className="showcase-portrait" src="/profile.png" alt={`${site.name}, Full-Stack Developer`} width={1080} height={1350} priority />
+          <Image className="showcase-portrait" src={profileImage} alt={`${site.name}, Full-Stack Developer`} priority />
           <div className="showcase-copy"><h2>{site.name}</h2><p>Software Product Builder<br />& Full-Stack Developer</p><p className="showcase-summary">Building commercial products and custom systems around real business operations.</p><small>Karachi, Pakistan</small></div>
         </aside>
       </div>

@@ -136,3 +136,9 @@ main { position: relative; z-index: 10; max-width: 1180px; margin: 0 auto; paddi
 .profile-name { font-size: 24px; }
 .typewriter-heading h1 em { color: var(--accent); font-style: italic; font-weight: 430; }
 @media (max-width: 560px) { .avatar-wrap { width: 70px; height: 70px; } .profile-card { padding: 13px 16px 13px 13px; gap: 15px; } .profile-name { font-size: 21px; } }
+
+/* Keep hero copy in normal document flow at every viewport. */
+.hero-copy { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; }
+.typewriter-heading { width: 100%; height: auto; min-height: 0; }
+.typewriter-heading h1 { width: 100%; flex: none; }
+.hero-tag { position: static; width: 100%; clear: both; }
