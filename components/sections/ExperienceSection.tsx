@@ -1,4 +1,5 @@
 import { SectionHead } from "@/components/SectionHead";
+import { CardSlider } from "@/components/ui/CardSlider";
 import { credentials, experience } from "@/data/portfolio";
 
 export function ExperienceSection() {
@@ -18,7 +19,9 @@ export function ExperienceSection() {
       </section>
       <section className="content-section" id="credentials">
         <SectionHead title="Proof & credentials" count="06 / 08" />
-        <div className="cert-grid">{credentials.map(([title, detail, type]) => <article className="cert-card" key={title}><h3>{title}</h3><p>{detail}</p><span>{type}</span></article>)}</div>
+        <CardSlider label="Proof and credentials cards">
+          {credentials.map(([title, detail, type]) => <article className="cert-card" key={title}><h3>{title}</h3><p>{detail}</p><span>{type}</span></article>)}
+        </CardSlider>
       </section>
     </>
   );

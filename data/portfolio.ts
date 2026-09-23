@@ -5,11 +5,11 @@ export const site = {
   shortName: "MK",
   role: "Full-Stack Developer & Software Product Builder",
   company: "MK TECH",
-  location: "Karachi, Pakistan · Open to Remote",
+  location: "Karachi, Pakistan. Products delivered globally",
   experience: "2+ years",
   deployments: "8+ business deployments",
   productCount: "6+ products & systems",
-  availability: "open to roles & client projects",
+  availability: "commercial products and selective collaborations",
   email: "mu7ammadkhan67@gmail.com",
   phone: "+92 315 2206451",
   linkedin: "https://www.linkedin.com/in/muhammad-khan-017b8829b",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     title: "Darzi Plus",
     year: "2026",
     category: "Tailor Shop Management",
-    headline: "From measurements and orders to payments, workers and delivery — in one offline-first system.",
+    headline: "Measurements, orders, payments, workers and deliveries managed in one offline-first system.",
     summary: "A commercial Windows desktop application built around the real daily workflow of tailoring businesses.",
     problem: "Paper diaries make old measurements slow to find, delivery dates easy to miss, remaining payments unclear and worker assignments difficult to track as a shop grows.",
     solution: "Darzi Plus digitizes customers, unlimited measurements, family orders, delivery status, advances, remaining balances, workers, expenses, reports, multilingual printing and backup while keeping normal shop work available offline.",
@@ -190,7 +190,7 @@ export const services = [
     kicker: "for businesses",
     title: "Custom Business Software",
     subtitle: "· Desktop & POS",
-    lede: "I translate manual business workflows into practical software — from counter billing and inventory to orders, customers, payments, reports and operational control.",
+    lede: "I turn manual business workflows into practical software. This can include billing, inventory, orders, customers, payments, reports and operational control.",
     items: [
       ["pos", "Retail, restaurant and industry-specific POS systems"],
       ["ops", "Custom management software around your workflow"],
@@ -254,9 +254,9 @@ export const experience = [
     tag: "freelance",
   },
   {
-    period: "2026",
-    title: "Frontend Developer Intern · Iris Software Solutions",
-    description: "Gained practical experience with React.js and Next.js, component-based architecture, frontend workflows, teamwork and professional development practices on real-world application concepts.",
+    period: "2025",
+    title: "Frontend Developer · Iris Software Solutions",
+    description: "Worked as a frontend developer using React.js and Next.js, contributing to component-based interfaces, frontend workflows, teamwork and professional software delivery.",
     tag: "industry experience",
   },
 ] as const;
@@ -271,10 +271,17 @@ export const whyMe = [
 ] as const;
 
 export const credentials = [
-  ["University of Sindh", "Bachelor of Technology (BTech), Computer Science · 2022 — 2025", "Education"],
+  ["University of Sindh", "Bachelor's Degree in Computer Science · 2022 — 2025", "Education"],
   ["1st Position — FYP Exhibition", "Nova Control Smart Home Automation System", "Award"],
-  ["Open to Remote Opportunities", "Full-Stack · React / Next.js · Product Development · Software Engineering", "Hiring"],
+  ["Product Engineering", "Full-Stack · React / Next.js · Desktop Systems · Software Products", "Capability"],
   ["MK TECH", "Commercial products for retail, restaurants, tailoring and motorcycle dealership workflows", "Business"],
   ["Fiverr", "Responsive websites, landing pages, UI dashboards and JavaScript improvements", "Freelance"],
   ["8+ Business Deployments", "Commercial systems currently used across real customer businesses", "Proof"],
+] as const;
+
+export const businessTypes = [
+  "Tailor Shops", "Hotels", "Restaurants", "Fast Food", "Wholesalers", "Poultry Businesses",
+  "Supermarkets & Marts", "Vehicle Showrooms", "Book Stores", "Medical Stores", "Hospitals & Clinics",
+  "General Stores", "Salons", "Vegetable Shops", "Mobile Shops", "Laptop & Electronics Shops",
+  "Offices & Service Centers", "Warehouses & Godowns", "Real Estate", "Any Custom Business",
 ] as const;

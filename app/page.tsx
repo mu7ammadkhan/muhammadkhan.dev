@@ -3,6 +3,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
+import { BusinessSoftwareSection } from "@/components/sections/BusinessSoftwareSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -20,6 +21,7 @@ export default function HomePage() {
         <AboutSection />
         <ProjectsSection projects={projects} />
         <ServicesSection />
+        <BusinessSoftwareSection />
         <ExperienceSection />
         <WorkWithMeSection />
         <ContactSection />

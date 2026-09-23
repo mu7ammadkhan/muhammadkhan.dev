@@ -126,7 +126,7 @@ export function ProjectsSection({ projects }: { projects: Project[] }) {
 
               <div className="case-cta-row">
                 <a className="primary-btn" href="#project-inquiry" onClick={() => setActiveProject(null)}>Build something similar <span>→</span></a>
-                <a className="text-btn" href="#hire" onClick={() => setActiveProject(null)}>Hiring for this kind of work? <span>→</span></a>
+                <a className="text-btn" href="#hire" onClick={() => setActiveProject(null)}>Need product engineering ownership? <span>→</span></a>
               </div>
             </div>
           </article>

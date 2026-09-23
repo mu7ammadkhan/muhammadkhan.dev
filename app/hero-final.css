@@ -1,0 +1,80 @@
+/* Direct portrait rendering, stable three-line typewriter, and editorial proof metrics. */
+.hero h1,
+.hero-main .hero h1 {
+  height: 3.04em;
+  min-height: 3.04em;
+  max-height: 3.04em;
+  overflow: hidden;
+}
+
+.hero-showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: visible;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+.hero-showcase::before { content: none; }
+.showcase-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: initial;
+  filter: none;
+}
+.showcase-copy {
+  margin-top: 4px;
+  padding: 14px 0 0;
+  border: 0;
+  background: none;
+}
+.showcase-copy h2 { margin: 0 0 6px; font-size: 21px; }
+.showcase-copy p { font-size: 10px; }
+.showcase-copy small { margin-top: 9px; padding: 0; border: 0; }
+
+.hero-main + .proof-grid { margin-top: 30px; }
+.proof-grid {
+  display: flex;
+  align-items: stretch;
+  max-width: 900px;
+  gap: 0;
+  overflow: visible;
+  border: 0;
+  background: none;
+}
+.proof-stat,
+.proof-stat:nth-child(2),
+.proof-stat:nth-child(-n+2) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 56px;
+  gap: 4px;
+  padding: 4px 18px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+  background: none;
+}
+.proof-stat:first-child { padding-left: 0; }
+.proof-stat:last-child { border-right: 0; }
+.proof-stat strong { margin: 0; font-size: 20px; line-height: 1; }
+.proof-stat span { font-size: 8px; line-height: 1.35; letter-spacing: .06em; }
+
+@media (max-width: 820px) {
+  .hero h1, .hero-main .hero h1 { height: 3.08em; min-height: 3.08em; max-height: 3.08em; }
+  .proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .proof-stat, .proof-stat:nth-child(2), .proof-stat:nth-child(-n+2) { min-height: 62px; padding: 10px 14px; border: 0; border-bottom: 1px solid var(--line); }
+  .proof-stat:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--line); }
+  .proof-stat:nth-last-child(-n+2) { border-bottom: 0; }
+}
+
+@media (max-width: 560px) {
+  .hero h1, .hero-main .hero h1 { height: 3.12em; min-height: 3.12em; max-height: 3.12em; }
+  .proof-stat { flex-direction: column; }
+}

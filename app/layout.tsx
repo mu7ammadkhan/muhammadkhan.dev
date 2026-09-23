@@ -1,6 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import "./enhancements.css";
+import "./polish.css";
+import "./refinement.css";
+import "./hero-final.css";
+import "./business-final.css";
+import "./portrait-frame.css";
+import "./typography-final.css";
 import { site } from "@/data/portfolio";
 
 export const metadata: Metadata = {

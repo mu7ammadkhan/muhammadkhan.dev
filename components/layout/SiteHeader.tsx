@@ -9,8 +9,8 @@ export function SiteHeader() {
       </div>
       <nav className="mini-nav" aria-label="Primary navigation">
         <a href="#projects">Work</a>
-        <a href="#hire">Hire</a>
-        <a href="#project-inquiry">Start a project</a>
+        <a href="#hire">Collaborate</a>
+        <a href="#project-inquiry">Business systems</a>
       </nav>
     </header>
   );
